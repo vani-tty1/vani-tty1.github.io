@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Python - Modern Programming Tutorial</title>
+  <link rel="icon" type="image/png" href="public/fish.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/css/tutorial.css">
+</head>
+<body>
+  <div class="bg-animation"></div>
+  <div class="particles" id="particles"></div>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#basics" class="nav-link">Basics</a></li>
+      <li><a href="#examples" class="nav-link">Examples</a></li>
+      <li><a href="#interactive" class="nav-link">Interactive</a></li>
+      <li><a href="#quiz" class="nav-link">Quiz</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1 class="hero-title">Python</h1>
+    <p class="hero-subtitle">
+      Master the art of programming with Python's elegant syntax, powerful libraries, and endless possibilities. From web development to AI, your journey starts here.
+    </p>
+    <div class="hero-cta">
+      <a href="#basics" class="btn btn-primary">
+        <span>🚀</span>
+        Start Learning
+      </a>
+      <a href="#interactive" class="btn btn-secondary">
+        <span>⚡</span>
+        Try Interactive
+      </a>
+    </div>
+  </section>
+
+  <section id="basics" class="section fade-in">
+    <h2 class="section-title">Python Fundamentals</h2>
+    <p class="section-subtitle">
+      Learn the core concepts that make Python one of the most popular programming languages in the world.
+    </p>
+
+
+
+    <div class="card-grid">
+      <div class="glass-card">
+        <span class="card-icon">🔤</span>
+        <h3 class="card-title">Variables & Types</h3>
+        <p class="card-description">
+          Python uses dynamic typing, making it easy to work with different data types like strings, numbers, lists, and dictionaries without explicit declarations.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <span class="card-icon">🧠</span>
+        <h3 class="card-title">Control Flow</h3>
+        <p class="card-description">
+          Master conditional statements, loops, and logical operations to control program execution and create dynamic, responsive applications.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <span class="card-icon">⚙️</span>
+        <h3 class="card-title">Functions</h3>
+        <p class="card-description">
+          Write reusable, modular code with functions. Learn about parameters, return values, and scope to build efficient programs.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <span class="card-icon">📦</span>
+        <h3 class="card-title">Data Structures</h3>
+        <p class="card-description">
+          Explore Python's powerful built-in data structures: lists, tuples, dictionaries, and sets for organizing and manipulating data.
+        </p>
+      </div>
+      
+      
+
+      <div class="glass-card">
+        <span class="card-icon">🔧</span>
+        <h3 class="card-title">Object-Oriented</h3>
+        <p class="card-description">
+          Understand classes, objects, inheritance, and encapsulation to write scalable and maintainable code using OOP principles.
+        </p>
+      </div>
+      
+     
+
+
+      <div class="glass-card">
+        <span class="card-icon">📚</span>
+        <h3 class="card-title">Libraries & Modules</h3>
+        <p class="card-description">
+          Leverage Python's extensive ecosystem with powerful libraries for web development, data science, AI, and automation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="examples" class="section fade-in">
+    <h2 class="section-title">Code Examples</h2>
+    <p class="section-subtitle">
+      See Python in action with these practical examples that demonstrate key concepts and best practices.
+    </p>
+
+    <div class="code-container">
+      <div class="code-header">
+        <span class="code-title">Variables and Data Types</span>
+        <button class="code-copy" onclick="copyCode(this)">Copy</button>
+      </div>
+      <div class="code-content">
+        <pre><code><span class="comment"># Variables and basic data types</span>
+<span class="keyword">name</span> = <span class="string">"Alice"</span>
+<span class="keyword">age</span> = <span class="number">25</span>
+<span class="keyword">height</span> = <span class="number">5.6</span>
+<span class="keyword">is_student</span> = <span class="keyword">True</span>
+
+<span class="comment"># Collections</span>
+<span class="keyword">languages</span> = [<span class="string">"Python"</span>, <span class="string">"JavaScript"</span>, <span class="string">"Go"</span>]
+<span class="keyword">person</span> = {
+    <span class="string">"name"</span>: <span class="keyword">name</span>,
+    <span class="string">"age"</span>: <span class="keyword">age</span>,
+    <span class="string">"languages"</span>: <span class="keyword">languages</span>
+}
+
+<span class="function">print</span>(<span class="string">f"Hello, I'm {name} and I'm {age} years old!"</span>)</code></pre>
+      </div>
+    </div>
+
+    <div class="code-container">
+      <div class="code-header">
+        <span class="code-title">Control Flow and Functions</span>
+        <button class="code-copy" onclick="copyCode(this)">Copy</button>
+      </div>
+      <div class="code-content">
+        <pre><code><span class="keyword">def</span> <span class="function">classify_age</span>(<span class="keyword">age</span>):
+    <span class="string">"""Classify a person's life stage based on age."""</span>
+    <span class="keyword">if</span> <span class="keyword">age</span> < <span class="number">13</span>:
+        <span class="keyword">return</span> <span class="string">"Child"</span>
+    <span class="keyword">elif</span> <span class="keyword">age</span> < <span class="number">20</span>:
+        <span class="keyword">return</span> <span class="string">"Teenager"</span>
+    <span class="keyword">elif</span> <span class="keyword">age</span> < <span class="number">65</span>:
+        <span class="keyword">return</span> <span class="string">"Adult"</span>
+    <span class="keyword">else</span>:
+        <span class="keyword">return</span> <span class="string">"Senior"</span>
+
+<span class="comment"># Usage example</span>
+<span class="keyword">ages</span> = [<span class="number">8</span>, <span class="number">16</span>, <span class="number">25</span>, <span class="number">70</span>]
+<span class="keyword">for</span> <span class="keyword">age</span> <span class="keyword">in</span> <span class="keyword">ages</span>:
+    <span class="keyword">category</span> = <span class="function">classify_age</span>(<span class="keyword">age</span>)
+    <span class="function">print</span>(<span class="string">f"Age {age}: {category}"</span>)</code></pre>
+      </div>
+    </div>
+
+    <div class="code-container">
+      <div class="code-header">
+        <span class="code-title">Working with Data Structures</span>
+        <button class="code-copy" onclick="copyCode(this)">Copy</button>
+      </div>
+      <div class="code-content">
+        <pre><code><span class="comment"># List comprehension and data manipulation</span>
+<span class="keyword">numbers</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]
+
+<span class="comment"># Filter even numbers and square them</span>
+<span class="keyword">even_squares</span> = [<span class="keyword">x</span>**<span class="number">2</span> <span class="keyword">for</span> <span class="keyword">x</span> <span class="keyword">in</span> <span class="keyword">numbers</span> <span class="keyword">if</span> <span class="keyword">x</span> % <span class="number">2</span> == <span class="number">0</span>]
+
+<span class="comment"># Dictionary for counting occurrences</span>
+<span class="keyword">text</span> = <span class="string">"python programming is awesome"</span>
+<span class="keyword">char_count</span> = {}
+<span class="keyword">for</span> <span class="keyword">char</span> <span class="keyword">in</span> <span class="keyword">text</span>:
+    <span class="keyword">char_count</span>[<span class="keyword">char</span>] = <span class="keyword">char_count</span>.<span class="function">get</span>(<span class="keyword">char</span>, <span class="number">0</span>) + <span class="number">1</span>
+
+<span class="function">print</span>(<span class="string">f"Even squares: {even_squares}"</span>)
+<span class="function">print</span>(<span class="string">f"Character frequency: {char_count}"</span>)</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="interactive" class="section fade-in">
+    <h2 class="section-title">Interactive Python Terminal</h2>
+    <p class="section-subtitle">
+      Try Python code live! Type your commands below and see the results instantly.
+    </p>
+
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-dot dot-red"></div>
+        <div class="terminal-dot dot-yellow"></div>
+        <div class="terminal-dot dot-green"></div>
+      </div>
+      <div class="terminal-body" id="terminal">
+        <div>
+          <span class="terminal-prompt">python3 >>></span>
+          <input type="text" class="terminal-input" id="terminalInput" placeholder="Type Python code here..." onkeypress="handleTerminalInput(event)">
+        </div>
+        <div id="terminalOutput"></div>
+      </div>
+    </div>
+
+    <div class="glass-card" style="margin-top: 40px;">
+      <h3 class="card-title">Try these examples:</h3>
+      <div class="card-description">
+        <p>• <code>print("Hello, Python!")</code></p>
+        <p>• <code>2 + 2 * 3</code></p>
+        <p>• <code>len("Python is awesome")</code></p>
+        <p>• <code>[x**2 for x in range(5)]</code></p>
+        <p>• <code>{"name": "Alice", "age": 25}</code></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="section fade-in">
+    <h2 class="section-title">Test Your Knowledge</h2>
+    <p class="section-subtitle">
+      Put your Python skills to the test with this interactive quiz covering the fundamentals.
+    </p>
+
+    <div class="quiz-container">
+      <div class="question" data-question="0">
+        <h3 class="question-title">1. Which of the following is the correct way to define a variable in Python?</h3>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>var name = "Alice"</span>
+        </div>
+        <div class="option" onclick="selectOption(this, true)">
+          <div class="radio"></div>
+          <span>name = "Alice"</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>string name = "Alice"</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>let name = "Alice"</span>
+        </div>
+      </div>
+
+      <div class="question" data-question="1" style="display: none;">
+        <h3 class="question-title">2. What will be the output of: print(type([1, 2, 3]))?</h3>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>&lt;class 'tuple'&gt;</span>
+        </div>
+        <div class="option" onclick="selectOption(this, true)">
+          <div class="radio"></div>
+          <span>&lt;class 'list'&gt;</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>&lt;class 'array'&gt;</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>&lt;class 'dict'&gt;</span>
+        </div>
+      </div>
+
+      <div class="question" data-question="2" style="display: none;">
+        <h3 class="question-title">3. Which loop is best for iterating over a list in Python?</h3>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>while loop</span>
+        </div>
+        <div class="option" onclick="selectOption(this, true)">
+          <div class="radio"></div>
+          <span>for loop</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>do-while loop</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>foreach loop</span>
+        </div>
+      </div>
+
+      <div class="question" data-question="3" style="display: none;">
+        <h3 class="question-title">4. What is the correct way to define a function in Python?</h3>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>function myFunc() {}</span>
+        </div>
+        <div class="option" onclick="selectOption(this, true)">
+          <div class="radio"></div>
+          <span>def myFunc():</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>func myFunc() {}</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>define myFunc() {}</span>
+        </div>
+      </div>
+
+      <div class="question" data-question="4" style="display: none;">
+        <h3 class="question-title">5. Which of the following is NOT a valid Python data type?</h3>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>list</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>dict</span>
+        </div>
+        <div class="option" onclick="selectOption(this, true)">
+          <div class="radio"></div>
+          <span>array</span>
+        </div>
+        <div class="option" onclick="selectOption(this, false)">
+          <div class="radio"></div>
+          <span>tuple</span>
+        </div>
+      </div>
+
+      <div id="quizResults" style="display: none;">
+        <h3 class="question-title">🎉 Quiz Complete!</h3>
+        <p id="scoreText" style="font-size: 1.2rem; margin-bottom: 20px;"></p>
+        <button class="btn btn-primary" onclick="restartQuiz()">
+          <span>🔄</span>
+          Take Quiz Again
+        </button>
+      </div>
+
+      <div style="margin-top: 30px; text-align: center;">
+        <button id="nextBtn" class="btn btn-primary" onclick="nextQuestion()" style="display: none;">
+          Next Question
+        </button>
+        <button id="submitBtn" class="btn btn-secondary" onclick="submitQuiz()" style="display: none;">
+          Submit Quiz
+        </button>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="src/js/tutorial.js"></script>
+</body>
+</html>

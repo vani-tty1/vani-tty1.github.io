@@ -40,7 +40,7 @@ function createParticle() {
       });
     });
 
-    // MENU TOGGLE LOGIC
+    
     function toggleMenu() {
         const navbar = document.getElementById('navbar');
         navbar.classList.toggle('active');
@@ -54,7 +54,7 @@ function createParticle() {
           const targetId = href.substring(1);
           const targetSection = document.getElementById(targetId);
           
-          // Close menu
+          
           document.getElementById('navbar').classList.remove('active');
 
           document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
