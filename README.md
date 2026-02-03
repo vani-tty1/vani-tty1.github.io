@@ -1,8 +1,6 @@
-kinda cozy in here
-<div align="center">
-<p>
-  <a href="https://vani1-2.github.io/">
-    <img src="https://img.shields.io/badge/🌐_Website-9c27b0?style=for-the-badge" alt="Website">
-  </a>
-</p>
-</div>   
+a simple website with some oddly hyprland inspired theming or so.
+
+
+### License
+
+This project is open source licensed under [GNU GPLv3](LICENSE), feel free to use it however you like
