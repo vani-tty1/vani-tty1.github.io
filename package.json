@@ -1,0 +1,18 @@
+{
+  "name": "vani-tty1.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:site": "vite --port 8000 --host --open",
+    "dev:memerist": "concurrently \"npx @tailwindcss/cli -i memerist/input.css -o memerist/output.css --watch\" \"vite memerist --port 8001 --host --open\"",
+    "build:memerist": "npx @tailwindcss/cli -i memerist/input.css -o memerist/output.css --minify",
+    "images": "mkdir -p memerist/assets/optimized && npx sharp -i memerist/assets/*.png -o memerist/assets/optimized/ -f avif --quality 80"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2",
+    "concurrently": "^9.1.2",
+    "sharp-cli": "^6.1.0"
+  }
+}

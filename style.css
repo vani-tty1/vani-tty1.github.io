@@ -227,6 +227,8 @@ a:hover {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   flex-shrink: 0;
   color: var(--dark5);
   background: linear-gradient(to top, #ccdef9aa, #fff0), linear-gradient(to top, #ccdef9, #fff0);
@@ -289,6 +291,27 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.52;
+  background-image: url('public/tris-l.svg');
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-pattern {
+    background-image: url('/tris-d.svg');
+  }
+}
+
+.hero-avatar-wrap,
+.hero-info {
+  position: relative;
+  z-index: 1;
 }
 
 
