@@ -4,156 +4,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>vani-tty1</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/fish.jpeg">
 </head>
-    <link rel="icon" type="image/png" sizes="32x32" href="public/fish.jpeg">
 <body>
-  <div class="bg-animation"></div>
-  <div class="particles" id="particles"></div>
+
+<section class="hero">
+  <div class="hero-avatar-wrap">
+    <div class="avatar-ring">
+      <img src="public/fish.jpeg" alt="Profile" class="profile-image">
+    </div>
+  </div>
+  <div class="hero-info">
+    <h1 class="hero-title">vani-tty1</h1>
+    <p class="hero-description">idk what I'm doing</p>
+    <div class="social-links">
+      <a href="https://github.com/vani-tty1" class="btn suggested">
+        <img src="public/github-mark.svg" alt="">
+        <span>Github</span>
+      </a>
+      <a href="https://archlinux.org" class="btn btn-wide suggested">
+        <span>I use </span>
+        <img src="public/archlinux-logo-white-scalable.svg" alt="Arch Linux" class="icon-sm">
+        <span>BTW</span>
+      </a>
+      <a href="https://open.spotify.com/user/31f7365er6j35exbsg4h2gx4vxle" class="btn">
+        <img src="public/Primary_Logo_Green_RGB.svg" alt="Spotify">
+        <span>Spotify</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 
   <main class="container">
-    <section class="hero fade-in">
-    <img src="public/fish.jpeg" alt="Profile" class="profile-image">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      <span>RANDOM AHH SIDE QUESTS</span>
-    </div>
-    <h1 class="hero-title">vani-tty1</h1>
-    <p class="hero-description">
-      Man I'm broke asf
-    </p>
-    <div class="social-links">
-      <a href="https://github.com/vani-tty1" class="social-btn primary">
-        <img src="/public/github-mark.svg" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">
-        <span>GitHub</span>
-      </a>
-      <a href="https://copr.fedorainfracloud.org/coprs/vaniiiiii/" class="social-btn">
-        <img src="/public/copr_logo.png" style="width: 44px; height: 24px; vertical-align: middle; margin-right: 8px;">
-        <span>Copr</span>
-      </a>
-    </div>
-  </section>
-
-
-
-  <section class="section fade-in">
-    <div class="section-header">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">Some things I've built while drinking a lot of Redbull</p>
-    </div>
-
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="/public/extension-manager.svg" class="project-icon" style="width: 64px; height: 64px;">
-        <h3 class="project-title">Extension Manager (Maintainer)</h3>
-        <p class="project-description">
-          I maintain an rpm package for Extension Manager, to avoid runtime downloads if using Flatpak
-        </p>
-        <div class="project-tags">
-          <span class="tag">RPM</span>
-          <span class="tag">COPR</span>
-        </div>
-        <a href="https://copr.fedorainfracloud.org/coprs/vaniiiiii/extension-manager/" class="project-link">
-          <span>View Repository</span>
-          <span>→</span>
-        </a>
+    <section class="section">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Some things I've built while drinking a lot of Redbull</p>
       </div>
 
-      <div class="project-card">
-        <img src="/public/memerist.svg" class="project-icon" style="width: 64px; height: 64px;">
-        <h3 class="project-title">Memerist</h3>
-        <p class="project-description">
-          A simple meme editor for Linux built using GTK4 and Libadwaita.
-        </p>
-        <div class="project-tags">
-          <span class="tag">C</span>
-          <span class="tag">GTK</span>
-          <span class="tag">Libadwaita</span>
-          <span class="tag">Meson</span>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="public/extension-manager.svg" class="project-icon" alt="">
+          <h3 class="project-title">Extension Manager (Maintainer)</h3>
+          <p class="project-description">
+            I maintain an rpm package for Extension Manager, much smaller storage compared to flatpak.
+          </p>
+          <div class="project-tags">
+            <span class="tag">RPM</span>
+            <span class="tag">COPR</span>
+          </div>
+          <a href="https://copr.fedorainfracloud.org/coprs/vaniiiiii/extension-manager/" class="project-link">View Repository →</a>
         </div>
-        <br>
-        <a href="https://github.com/vani-tty1/memerist" class="project-link">
-          <span>View App Page</span>
-          <span>→</span>
-        </a>
-      </div>
 
-      <div class="project-card">
-        <img src="/public/io.github.vani_tty1.kissaki.svg" class="project-icon" style="width: 64px; height: 64px;">
-        <h3 class="project-title">Kissaki(Under Development)</h3>
-        <p class="project-description">
-          A simple code editor
-        </p>
-        <div class="project-tags">
-          <span class="tag">C</span>
-          <span class="tag">GTK</span>
-          <span class="tag">gtksourceview</span>
-          <span class="tag">libadwaita</span>
-          <span class="tag">meson</span>
+        <div class="project-card">
+          <img src="public/memerist.svg" class="project-icon" alt="">
+          <h3 class="project-title">Memerist</h3>
+          <p class="project-description">
+            A simple meme editor for Linux.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C</span>
+            <span class="tag">GTK</span>
+            <span class="tag">Libadwaita</span>
+            <span class="tag">Meson</span>
+          </div>
+          <a href="https://github.com/vani-tty1/memerist" class="project-link">View App Page →</a>
         </div>
-        <br>
-        <a href="https://github.com/vani-tty1/kissaki" class="project-link">
-          <span>View App Page</span>
-          <span>→</span>
-        </a>
-      </div>
 
-      <div class="project-card">
-        <img src="/public/HGST.png" class="project-icon" style="width: 64px; height: 64px;">
-        <h3 class="project-title">HGST Library System</h3>
-        <p class="project-description">
-			commissioned website for a school somewhere in the mountains
-        </p>
-        <div class="project-tags">
-          <span class="tag">PHP</span>
-          <span class="tag">MySQL</span>
+        <div class="project-card">
+          <img src="public/io.github.vani_tty1.kissaki.svg" class="project-icon" alt="">
+          <h3 class="project-title">Kissaki (Under Development)</h3>
+          <p class="project-description">
+            A simple code editor.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C</span>
+            <span class="tag">GTK</span>
+            <span class="tag">gtksourceview</span>
+            <span class="tag">Libadwaita</span>
+            <span class="tag">Meson</span>
+          </div>
+          <a href="https://github.com/vani-tty1/kissaki" class="project-link">View App Page →</a>
         </div>
-        <a href="https://hgst.gt.tc" class="project-link" target="_blank">
-          <span>View Project</span>
-          <span>→</span>
-        </a>
-      </div>
 
-      <div class="project-card">
-        <img src="/public/logo2.png" class="project-icon" style="width: 64px; height: 64px;">
-        <h3 class="project-title">HGST Library System</h3>
-        <p class="project-description">
-			commissioned website for the Diocese of Bangued
-        </p>
-        <div class="project-tags">
-          <span class="tag">PHP</span>
-          <span class="tag">MySQL</span>
+        <div class="project-card">
+          <img src="public/HGST.png" class="project-icon" alt="">
+          <h3 class="project-title">HGST Library System</h3>
+          <p class="project-description">
+            Commissioned website for a school somewhere in the mountains.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <a href="https://hgst.gt.tc" class="project-link" target="_blank">View Project →</a>
         </div>
-        <a href="https://dioceseofbangued.org" class="project-link" target="_blank">
-          <span>View Project</span>
-          <span>→</span>
-        </a>
-      </div>
 
-      <div class="project-card">
-        <span class="project-icon">🚀</span>
-        <h3 class="project-title">More Coming Soon...</h3>
-        <p class="project-description">
-            God gives his toughest battles to his strongest soldier's
-        </p>
-        <div class="project-tags">
-          <span class="tag">In Progress</span>
+        <div class="project-card">
+          <img src="public/logo2.png" class="project-icon" alt="">
+          <h3 class="project-title">Diocese of Bangued Website</h3>
+          <p class="project-description">
+            Commissioned website for the Diocese of Bangued.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <a href="https://dioceseofbangued.org" class="project-link" target="_blank">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">🚀 More Coming Soon...</h3>
+          <p class="project-description">
+            God gives his toughest battles to his strongest soldiers.
+          </p>
+          <div class="project-tags">
+            <span class="tag">In Progress</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
+  <footer>
+    <p>© 2026 vani-tty1. Released under the <a href="https://github.com/vani-tty1/vani-tty1.github.io/blob/main/LICENSE">GPLv3</a>.</p>
+    <p><a href="https://github.com/vani-tty1/vani-tty1.github.io">View Source Code</a></p>
+  </footer>
 
-<footer class="footer">
-    <p>©2026 vani-tty1. Released under the <a href="https://github.com/vani-tty1/vani-tty1.github.io/blob/main/LICENSE" style="color: #00d9ff; text-decoration: none;">GPLv3</a>.</p>
-    <p style="margin-top: 10px;">
-        <a href="https://github.com/vani-tty1/vani-tty1.github.io" style="color: #00d9ff; text-decoration: none; font-size: 0.9em;">
-            View Source Code
-        </a>
-    </p>
-</footer>
-
-  <script src="src/js/main.js" defer></script>
 </body>
 </html>

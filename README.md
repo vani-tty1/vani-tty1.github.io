@@ -1,6 +1,7 @@
-a simple website with some oddly hyprland inspired theming or so.
+# vani-tty1.hitgub.io
 
+An about me website, design inspired by GNOME's [libadwaita](https://gnome.pages.gitlab.gnome.org/libadwaita/)
 
 ### License
 
-This project is open source licensed under [GNU GPLv3](LICENSE), feel free to use it however you like
+This project is open source licensed under [GNU GPLv3](LICENSE).
