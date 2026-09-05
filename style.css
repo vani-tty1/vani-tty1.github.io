@@ -304,7 +304,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   .hero-pattern {
-    background-image: url('/tris-d.svg');
+    background-image: url('public/tris-d.svg');
   }
 }
 
