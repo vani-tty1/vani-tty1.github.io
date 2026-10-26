@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "concurrently \"npx @tailwindcss/cli -i memerist/input.css -o memerist/output.css --watch\" \"vite  --port 8000 --host --open\"",
     "build:memerist": "npx @tailwindcss/cli -i memerist/input.css -o memerist/output.css --minify",
-    "images": "mkdir -p memerist/assets/optimized && npx sharp -i memerist/assets/*.png -o memerist/assets/optimized/ -f avif --quality 80"
+    "build:velocity": "npx @tailwindcss/cli -i velocity/input.css -o velocity/output.css --minify",
+    "images": "mkdir -p memerist/assets/optimized && npx sharp -i memerist/assets/*.png -o memerist/assets/optimized/ -f avif --quality 80",
+    "velocity": "mkdir -p velocity/assets/optimized && npx sharp -i velocity/assets/*.png -o velocity/assets/optimized/ -f avif --quality 80"
   },
   "devDependencies": {
     "vite": "^6.0.0",
