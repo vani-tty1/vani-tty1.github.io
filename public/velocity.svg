@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>Velocity</title>
+  <defs>
+    <linearGradient id="base" x1="8" y1="0" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9a9996"/>
+      <stop offset="0.04" stop-color="#c0bfbc"/>
+      <stop offset="0.08" stop-color="#77767b"/>
+      <stop offset="0.92" stop-color="#77767b"/>
+      <stop offset="0.96" stop-color="#c0bfbc"/>
+      <stop offset="1" stop-color="#9a9996"/>
+    </linearGradient>
+    <radialGradient id="face" cx="64" cy="68.8" r="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#474154"/>
+      <stop offset="1" stop-color="#2c2737"/>
+    </radialGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="47" y1="51" x2="47" y2="51" id="gradient-0" spreadMethod="pad">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="42" y1="64" x2="42" y2="64" id="gradient-1">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="45" y1="77" x2="45" y2="77" id="gradient-2">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="51" y1="90" x2="51" y2="90" id="gradient-3">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="42" y1="64" x2="42" y2="64" id="gradient-4">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="47" y1="51" x2="47" y2="51" id="gradient-5" spreadMethod="pad">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="45" y1="77" x2="45" y2="77" id="gradient-6">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="51" y1="90" x2="51" y2="90" id="gradient-7">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: rgb(119, 118, 123);"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="52" width="112" height="64" rx="8" fill="url(#base)"/>
+  <rect x="8" y="28" width="112" height="81.6" rx="8" fill="url(#face)"/>
+  <rect x="8.5" y="28.5" width="111" height="80.6" rx="7.5" fill="none" style="stroke: rgb(119, 118, 123);"/>
+  <path d="M 75 50.073 L 99 73.573 L 75 97.073" fill="none" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 10; stroke: rgb(119, 118, 123);">
+    <title>side panel of arrow</title>
+  </path>
+  <path d="M 75.02 48.612 L 99.02 72.112 L 75.02 95.612" fill="none" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 10; stroke: rgb(119, 118, 123);"/>
+  <path d="M 75 47 L 99 70.5 L 75 94" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="url(#gradient-1)" stroke-width="6" stroke-linecap="round" fill="none" transform="matrix(1, 0, 0, 1.026144, 0, -0.241505)" style="">
+    <title>mid of white lines</title>
+    <path d="M30 51H64" style="stroke: url(&quot;#gradient-0&quot;);"/>
+    <path d="M20 64H64" style=""/>
+    <path d="M26 77H64" style="stroke: url(&quot;#gradient-2&quot;);"/>
+    <path d="M38 90H64" style="stroke: url(&quot;#gradient-3&quot;);"/>
+  </g>
+  <g stroke="url(#gradient-4)" stroke-width="6" stroke-linecap="round" fill="none" transform="matrix(1, 0, 0, 1, 0, 2.430347)">
+    <title>bottom of white lines</title>
+    <path d="M30 51H64" style="stroke: url(&quot;#gradient-5&quot;);"/>
+    <path d="M20 64H64" style=""/>
+    <path d="M26 77H64" style="stroke: url(&quot;#gradient-6&quot;);"/>
+    <path d="M38 90H64" style="stroke: url(&quot;#gradient-7&quot;);"/>
+  </g>
+  <g stroke="url(#gradient-4)" stroke-width="6" stroke-linecap="round" fill="none">
+    <title>white lines</title>
+    <path d="M30 51H64" style="stroke: rgb(255, 255, 255);"/>
+    <path d="M20 64H64" style="stroke: rgb(255, 255, 255);"/>
+    <path d="M26 77H64" style="stroke: rgb(255, 255, 255);"/>
+    <path d="M38 90H64" style="stroke: rgb(255, 255, 255);"/>
+  </g>
+</svg>
