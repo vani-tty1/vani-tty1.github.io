@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npx @tailwindcss/cli -i memerist/input.css -o memerist/output.css --watch\" \"vite  --port 8000 --host --open\"",
+    "dev": "vite  --port 8000 --host --open",
     "build:memerist": "npx @tailwindcss/cli -i memerist/input.css -o memerist/output.css --minify",
     "build:velocity": "npx @tailwindcss/cli -i velocity/input.css -o velocity/output.css --minify",
     "images": "mkdir -p memerist/assets/optimized && npx sharp -i memerist/assets/*.png -o memerist/assets/optimized/ -f avif --quality 80",
