@@ -250,7 +250,8 @@ a:hover {
 }
 
 .hero-info {
-  flex: 0 1 500px;
+  flex: 0 1 375px;
+  transform: translateX(3rem);
 }
 
 .hero-title {
@@ -291,6 +292,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateX(5rem);
 }
 
 .hero-pattern {
@@ -299,6 +301,18 @@ a:hover {
   z-index: 0;
   opacity: 0.52;
   background-image: url('public/tris-l.svg');
+  pointer-events: none;
+}
+
+.insignia {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.60;
+  background-image: url('public/mafty.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
   pointer-events: none;
 }
 
@@ -356,10 +370,17 @@ a:hover {
   }
   .hero-info {
     text-align: center;
+    transform: none;
   }
   .hero-description {
     margin-left: auto;
     margin-right: auto;
+  }
+  .insignia {
+    opacity: 0;
+  }
+  .hero-avatar-wrap {
+    transform: none;
   }
 }
 
